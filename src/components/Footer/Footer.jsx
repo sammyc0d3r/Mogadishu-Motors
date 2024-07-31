@@ -1,118 +1,79 @@
 import React from "react";
 import {
-  FaFacebook,
+  FaFacebookF,
+  FaTwitter,
   FaInstagram,
-  FaLinkedin,
-  FaLocationArrow,
-  FaMobileAlt,
+  FaLinkedinIn,
 } from "react-icons/fa";
 
-const FooterLinks = [
-  {
-    title: "Home",
-    link: "/#",
-  },
-  {
-    title: "About",
-    link: "/#about",
-  },
-  {
-    title: "Contact",
-    link: "/#contact",
-  },
-  {
-    title: "Blog",
-    link: "/#blog",
-  },
-];
 const Footer = () => {
   return (
-    <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
-      <section className="container">
-        <div className=" grid md:grid-cols-3 py-5">
-          {/* company Details */}
-          <div className=" py-8 px-4 ">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">
-              Car Rental
-            </h1>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Possimus, voluptate.{" "}
-            </p>
-            <br />
-            <div className="flex items-center gap-3">
-              <FaLocationArrow />
-              <p>Noida, Uttar Pradesh</p>
-            </div>
-            <div className="flex items-center gap-3 mt-3">
-              <FaMobileAlt />
-              <p>+91 123456789</p>
-            </div>
-            {/* Social Handle */}
-            <div className="flex items-center gap-3 mt-6">
-              <a href="#">
-                <FaInstagram className="text-3xl hover:text-primary duration-300" />
-              </a>
-              <a href="#">
-                <FaFacebook className="text-3xl hover:text-primary duration-300" />
-              </a>
-              <a href="#">
-                <FaLinkedin className="text-3xl hover:text-primary duration-300" />
-              </a>
-            </div>
-          </div>
-          {/* Links */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
-            <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Important Links
-                </h1>
-                <ul className={`flex flex-col gap-3`}>
-                  {FooterLinks.map((link) => (
-                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200">
-                      <span>&#11162;</span>
-                      <span>{link.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Links
-                </h1>
-                <ul className="flex flex-col gap-3">
-                  {FooterLinks.map((link) => (
-                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200">
-                      <span>&#11162;</span>
-                      <span>{link.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Location
-                </h1>
-                {/* <ul className="list-disc list-inside"> */}
-                <ul className="flex flex-col gap-3">
-                  {FooterLinks.map((link) => (
-                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200">
-                      <span>&#11162;</span>
-                      <span>{link.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+    <footer className="bg-gray-900 text-white py-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        {/* Brand Information and Social Links */}
+        <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
+          <h2 className="text-3xl font-bold mb-4">Car Sales</h2>
+          <p className="text-center md:text-left max-w-md mb-4">
+            We are a dedicated team committed to providing top-notch car sales
+            services. Our mission is to offer reliable and affordable vehicles
+            to meet your needs.
+          </p>
+          <div className="flex space-x-4">
+            <a
+              href="https://facebook.com"
+              className="text-white hover:text-blue-500 transition-colors"
+            >
+              <FaFacebookF size={24} />
+            </a>
+            <a
+              href="https://twitter.com"
+              className="text-white hover:text-blue-400 transition-colors"
+            >
+              <FaTwitter size={24} />
+            </a>
+            <a
+              href="https://instagram.com"
+              className="text-white hover:text-pink-500 transition-colors"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              href="https://linkedin.com"
+              className="text-white hover:text-blue-700 transition-colors"
+            >
+              <FaLinkedinIn size={24} />
+            </a>
           </div>
         </div>
-      </section>
-    </div>
+
+        {/* Important Links */}
+        <div className="flex flex-col items-center md:items-end">
+          <h2 className="text-2xl font-bold mb-4">Important Links</h2>
+          <ul className="text-center md:text-right space-y-2">
+            <li>
+              <a href="/#" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/#cars" className="hover:underline">
+                Cars
+              </a>
+            </li>
+            <li>
+              <a href="/#about" className="hover:underline">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/#contact" className="hover:underline">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   );
 };
 
