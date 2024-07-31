@@ -20,7 +20,19 @@ Welcome to Mogadishu Motors, your premier destination for buying and selling car
 To get started with the project, follow these steps:
 
 1. **Clone the Repository**:
+
    ```sh
    git clone https://github.com/yourusername/mogadishu-motors.git
    cd mogadishu-motors
+   ```
+
+2. **Install Dependencies**:
+
+   ```sh
+   npm install
+   ```
+
+3. **Start the Development Server**:
+   ```sh
+   npm start
    ```
