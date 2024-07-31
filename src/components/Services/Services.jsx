@@ -38,7 +38,7 @@ const skillsData = [
 const Services = () => {
   return (
     <>
-      <span id="about"></span>
+      <span id="services"></span>
       <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container">
           <div className="pb-12">
@@ -61,7 +61,7 @@ const Services = () => {
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
                 <p>{skill.description}</p>
                 <a
-                  href={skill.link}
+                  href="#contact"
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
                 >
                   Learn more

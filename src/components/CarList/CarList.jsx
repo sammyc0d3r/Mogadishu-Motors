@@ -1,7 +1,4 @@
 import React from "react";
-import whiteCar from "../../assets/white-car.png";
-import car2 from "../../assets/car5.png";
-import car3 from "../../assets/car6.png";
 
 import { useState, useEffect } from "react";
 
@@ -9,7 +6,7 @@ const CarList = () => {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/cars")
+    fetch("http://147.182.228.32:8080/cars")
       .then((response) => response.json())
       .then((data) => {
         console.log(data); // Print the response data to the console
@@ -51,8 +48,8 @@ const CarList = () => {
                 <div className="space-y-2">
                   <h1 className="text-primary font-semibold">{car.name}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
-                    <p>${car.price}/Day</p>
-                    <a href="#">Details</a>
+                    <p>${car.price}</p>
+                    <a href="#contact">Details</a>
                   </div>
                 </div>
                 <p className="text-xl font-semibold absolute top-0 left-3">
@@ -64,7 +61,16 @@ const CarList = () => {
         </div>
         {/* End of car listing */}
         <div className="grid place-items-center mt-8">
-          <button data-aos="fade-up" className="button-outline">
+          <button
+            data-aos="fade-up"
+            className="button-outline"
+            onClick={() => {
+              const contactElement = document.getElementById("contact");
+              if (contactElement) {
+                contactElement.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             Get Started
           </button>
         </div>

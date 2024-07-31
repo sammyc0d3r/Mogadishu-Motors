@@ -43,6 +43,10 @@ const Hero = ({ theme }) => {
               data-aos-delay="1500"
               onClick={() => {
                 AOS.refreshHard();
+                const contactElement = document.getElementById("contact");
+                if (contactElement) {
+                  contactElement.scrollIntoView({ behavior: "smooth" });
+                }
               }}
               className="rounded-md bg-primary hover:bg-primary/80 transition duration-500 py-2 px-6 text-black"
             >

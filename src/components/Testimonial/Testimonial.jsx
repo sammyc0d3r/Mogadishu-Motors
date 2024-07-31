@@ -6,7 +6,7 @@ const Testimonial = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/testimonials")
+    fetch("http://147.182.228.32:8080/testimonials")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");

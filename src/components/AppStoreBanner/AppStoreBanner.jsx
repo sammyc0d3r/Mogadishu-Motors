@@ -35,7 +35,7 @@ const AppStoreBanner = () => {
               className="flex flex-wrap justify-center items-center gap-4"
             >
               <a
-                href="#"
+                href="#contact"
                 className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800"
               >
                 Contact Us

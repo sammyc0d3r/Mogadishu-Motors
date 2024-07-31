@@ -18,7 +18,7 @@ const Contact = () => {
             </div>
             <div className="sm:grid sm:place-items-center">
               <a
-                href="#"
+                href="#contact"
                 className="inline-block font-semibold py-2 px-6 bg-primary text-white hover:bg-primary/80 duration-200 tracking-widest uppercase "
               >
                 Contact

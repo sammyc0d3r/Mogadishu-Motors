@@ -3,7 +3,10 @@ import CarPng from "../../assets/car1.png";
 
 const About = () => {
   return (
-    <div className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
+    <div
+      className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300"
+      id="about"
+    >
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="slide-right" data-aos-duration="1500">
@@ -30,7 +33,16 @@ const About = () => {
                 vehicles at affordable prices, ensuring that every journey is
                 comfortable and enjoyable.
               </p>
-              <button data-aos="fade-up" className="button-outline">
+              <button
+                data-aos="fade-up"
+                className="button-outline"
+                onClick={() => {
+                  const contactElement = document.getElementById("contact");
+                  if (contactElement) {
+                    contactElement.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Get Started
               </button>
             </div>
