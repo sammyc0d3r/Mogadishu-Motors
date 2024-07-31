@@ -33,7 +33,7 @@ const Hero = ({ theme }) => {
               data-aos-delay="600"
               className="text-5xl lg:text-7xl font-semibold font-serif"
             >
-              Car Rental
+              Mogadishu Motors
             </h1>
             <p data-aos="fade-up" data-aos-delay="1000">
               Discover the best deals on cars at Mogadishu Motors.{" "}

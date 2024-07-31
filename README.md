@@ -36,3 +36,42 @@ To get started with the project, follow these steps:
    ```sh
    npm start
    ```
+   How the App Works
+   Car Information
+   The app receives car information from an external API server. This server provides data about various cars, including their specifications, images, and testimonials from users.
+
+API Server
+The API server is currently hosted over HTTP. Due to this, modern browsers may block the content as insecure. To ensure the app functions correctly, you need to allow insecure content in your browser.
+
+Allowing Insecure Content
+To allow insecure content, follow these steps:
+
+Open your browser settings.
+Navigate to the security or privacy settings.
+Find the option to allow insecure content.
+Enable the option for the site http://mogadishu-motors.vercel.app.
+Here is a screenshot to guide you through the process:
+
+<img alt="Allow Insecure Content" src="https://i.ibb.co/G7DrY4M/Screenshot-2024-07-31-214629.png">
+Deployment
+The app is deployed on Vercel and can be accessed at the following link:
+
+http://mogadishu-motors.vercel.app/
+
+## Contributing
+
+We welcome contributions! If you would like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+```
+
+```

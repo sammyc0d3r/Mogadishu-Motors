@@ -1,10 +1,13 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-
 import { Navlinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
-  console.log("showMenu", showMenu);
+  const closeMenu = () => {
+    // Logic to close the menu can be added here if needed
+    console.log("Menu closed");
+  };
+
   return (
     <div
       className={`${
@@ -22,8 +25,12 @@ const ResponsiveMenu = ({ showMenu }) => {
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
             {Navlinks.map((data) => (
-              <li>
-                <a href={data.link} className="mb-5 inline-block">
+              <li key={data.id}>
+                <a
+                  href={data.link}
+                  className="mb-5 inline-block"
+                  onClick={closeMenu}
+                >
                   {data.name}
                 </a>
               </li>
