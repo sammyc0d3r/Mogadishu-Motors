@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Car 1",
+    "price": 100,
+    "image": "https://i.ibb.co/pfJWHVZ/white-car.png",
+    "aosDelay": 0,
+    "description": "This is a description for Car 1",
+    "seatingCapacity": "4"
+  },
+  {
+    "name": "Car 2",
+    "price": 250,
+    "image": "https://i.ibb.co/yfLytsZ/car5.png",
+    "aosDelay": 500,
+    "description": "This is a description for Car 1",
+    "seatingCapacity": "4"
+  },
+  {
+    "name": "Car 3",
+    "price": 450,
+    "image": "https://i.ibb.co/5WHt63m/car6.png",
+    "aosDelay": 1000,
+    "description": "This is a description for Car 1",
+    "seatingCapacity": "4"
+  }
+]
